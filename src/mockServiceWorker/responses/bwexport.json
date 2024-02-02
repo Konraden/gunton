@@ -1,0 +1,101 @@
+{
+  "encrypted": false,
+  "folders": [
+    {
+      "id": "839fee71-b069-4a01-8551-acd2013df5b2",
+      "name": "Folder 1"
+    },
+    {
+      "id": "32da00a5-ffcd-44cb-b832-acd2013df5b2",
+      "name": "Folder 2"
+    }
+  ],
+  "items": [
+    {
+      "passwordHistory": null,
+      "revisionDate": "2024-01-01T12:00:00.000Z",
+      "creationDate": "2024-01-01T12:00:00.000Z",
+      "deletedDate": null,
+      "id": "4dd31d0c-6659-4584-81c1-af1a01cb286e",
+      "organizationId": null,
+      "folderId": "",
+      "type": 1,
+      "reprompt": 0,
+      "name": "Example Auth",
+      "notes": null,
+      "favorite": false,
+      "login": {
+        "fido2Credentials": [],
+        "uris": [
+          {
+            "match": null,
+            "uri": "http://auth.example.com"
+          }
+        ],
+        "username": "myEmail@example.com",
+        "password": "my-new-password_1",
+        "totp": null
+      },
+      "collectionIds": null
+    },
+    {
+      "passwordHistory": null,
+      "revisionDate": "2024-01-01T12:00:00.000Z",
+      "creationDate": "2024-01-01T12:00:00.000Z",
+      "deletedDate": null,
+      "id": "75dcd6fc-6659-4174-81c1-af1d00cb286e",
+      "organizationId": null,
+      "folderId": "839fee71-b069-4a01-8551-acd2013df5b",
+      "type": 1,
+      "reprompt": 0,
+      "name": "Example Login",
+      "notes": null,
+      "favorite": false,
+      "login": {
+        "fido2Credentials": [],
+        "uris": [
+          {
+            "match": null,
+            "uri": "http://login.example.com"
+          }
+        ],
+        "username": "myEmail@example.com",
+        "password": "my-new-password_2",
+        "totp": null
+      },
+      "collectionIds": null
+    },
+    {
+      "passwordHistory": [
+        {
+          "lastUsedDate": "2024-01-01T12:00:00.000Z",
+          "password": "my-old-password"
+        }
+      ],
+      "revisionDate": "2024-01-01T12:00:00.000Z",
+      "creationDate": "2024-01-01T12:00:00.000Z",
+      "deletedDate": null,
+      "id": "9fd5bb65-89f0-e964-90d0-acd1113df5b2",
+      "organizationId": null,
+      "folderId": "32da00a5-ffcd-44cb-b832-acd2013df5b2",
+      "type": 1,
+      "reprompt": 0,
+      "name": "Gmail",
+      "notes": null,
+      "favorite": false,
+      "login": {
+        "fido2Credentials": [],
+        "uris": [
+          {
+            "match": null,
+            "uri": "https://gmail.com"
+          }
+        ],
+        "username": "example@gmail.com",
+        "password": "my-new-password_2",
+        "totp": null
+      },
+      "collectionIds": null
+    }
+  ]
+}
