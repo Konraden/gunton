@@ -1,8 +1,8 @@
-import { Folder } from './folder.model';
-import { Secret } from './secret.model';
+import { IFolder } from './folder.model';
+import { ISecret } from './secret.model';
 
-export type DepositBox = {
+export interface IDepositBox {
   encrypted: boolean;
-  folders: Folder[];
-  items: Secret[];
-};
+  folders: IFolder[];
+  items: ISecret[];
+}

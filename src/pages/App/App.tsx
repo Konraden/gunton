@@ -1,23 +1,9 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from '../Home/Home';
-import { API } from '../../services/DataService/api.data.service';
+import { RouterProvider } from 'react-router-dom';
+import { appRouter } from '../../services/Router/router.service';
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <Home />,
-      loader: async () => await API.GET('/localData')
-      // children: [
-      //   {
-      //     path: "team",
-      //     element: <Team />,
-      //     loader: teamLoader,
-      //   },
-      // ],
-    }
-  ]);
+  const router = appRouter.create();
 
   return (
     <div className="App">

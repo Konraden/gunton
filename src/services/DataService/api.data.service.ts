@@ -11,7 +11,6 @@ const client = axios.create({
 async function GET(url: string) {
   try {
     const response = await client.get(url);
-    console.log(response);
     if (response.status === StatusCode.SuccessOK) {
       return response.data;
     }

@@ -1,12 +1,10 @@
-import { FidoCredential } from "./fidoCredential.model";
-import { LoginUri } from "./loginUri.model";
+import { IFidoCredential } from './fidoCredential.model';
+import { ILoginUri } from './loginUri.model';
 
-export type Login = {
-    fido2Credentials: FidoCredential[];
-    uris: LoginUri[];
-    username?: string;
-    password?: string;
-    totp?: string;
-
+export interface ILogin {
+  fido2Credentials: IFidoCredential[];
+  uris: ILoginUri[];
+  username?: string;
+  password?: string;
+  totp?: string;
 }
-

@@ -1,6 +1,6 @@
 import { UriMatchType } from '../enums/uriMatchType.enum';
 
-export type LoginUri = {
+export interface ILoginUri {
   match: UriMatchType;
   uri: string;
-};
+}

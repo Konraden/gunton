@@ -1,4 +1,4 @@
-export type PasswordHistory = {
-    lastUsedDate: Date;
-    password: string;
+export interface IPasswordHistory {
+  lastUsedDate: Date;
+  password: string;
 }

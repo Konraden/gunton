@@ -1,3 +1,3 @@
-import { localDataHandler } from './localBWData';
+import { vaultHandlers } from './vaultHandlers';
 
-export const handlers = [...localDataHandler];
+export const handlers = [...vaultHandlers];

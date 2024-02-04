@@ -1,4 +1,4 @@
-export type Folder = {
+export interface IFolder {
   id: string;
   name: string;
-};
+}
