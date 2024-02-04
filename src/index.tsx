@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './pages/App/App';
 import reportWebVitals from './reportWebVitals';
+import { NextUIProvider } from '@nextui-org/react';
 
 async function enableMocking() {
   if (process.env.GUNTON_ENV === 'localhost') {
@@ -23,9 +24,9 @@ async function startClient() {
     document.getElementById('root') as HTMLElement
   );
   root.render(
-    <React.StrictMode>
+    <NextUIProvider>
       <App />
-    </React.StrictMode>
+    </NextUIProvider>
   );
 }
 
