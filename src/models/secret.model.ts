@@ -1,3 +1,4 @@
+import { SecretType } from '../enums/secretType.enum';
 import { ILogin } from './login.model';
 import { IPasswordHistory } from './passwordHistory.model';
 
@@ -9,7 +10,7 @@ export interface ISecret {
   id: string;
   organizationId?: string;
   folderId?: string;
-  type: number;
+  type: SecretType;
   reprompt: number;
   name: string;
   notes?: string;

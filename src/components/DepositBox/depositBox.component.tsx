@@ -9,8 +9,8 @@ type Props = {
 function DepositBox(props: Props) {
   return (
     <div>
-      {props.depositBox.items.map((item: ISecret) => (
-        <Secret secret={item} />
+      {props.depositBox?.secrets?.map((item: ISecret, idx) => (
+        <Secret secret={item} key={idx} />
       ))}
     </div>
   );
